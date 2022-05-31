@@ -1,0 +1,250 @@
+/* index .css */
+@charset "utf-8";
+
+:root{
+    --main-color-gray : #5c5c5c;
+    --main-color-blue : #5e889e;
+    --sub-color-purple : #755562;
+    --sub-color-gray : #999;
+}
+
+/* #grid_12{ 
+    position: fixed; top: 0; left: 50%;
+    width: 1200px; height: 100%;
+    transform: translateX(-50%);
+    display: flex;
+    z-index: 3;
+}
+#grid_12 div{ 
+    width: 80px; height: 100%;
+    margin: 0 10px;
+    background-color: rgba(20, 50, 50, 0.25);
+} */
+
+main{ 
+    height: 830px;
+    background-image: url(../img/header-bg.jpg);
+    background-size: cover; background-position: 50% 50%;
+}
+main .cloud{ 
+    width: 100%; height: 100%;
+    background-image: url(../img/cloud.png);
+    background-position: 0% 130%;
+    background-repeat: no-repeat;
+    animation: 160s moveCloud infinite linear;
+}
+@keyframes moveCloud{
+    0%{ background-position: 0% 130%;}
+    50%{ background-position: 100% 130%;}
+    100%{ background-position: 0% 130%;}
+}
+main .cloud .wrap{ 
+    width: 1200px; height: 100%;
+    margin: 0 auto;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main .cloud .wrap .txt_part{ 
+    
+}
+main .cloud .wrap .txt_part h4{ font-weight: 300;}
+main .cloud .wrap .txt_part h2{ 
+    font-size: 36px;
+    padding: 10px 0 60px;
+}
+main .cloud .wrap .txt_part h2 span{ font-size: 48px;}
+
+main .cloud .wrap .btn_part{ }
+main .cloud .wrap .btn_part button{ 
+    height: 30px;
+    padding: 0 20px; margin: 0 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #5e889e;
+    color: #fff; font-size: 16px;
+    line-height: 20px; font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.5s, color 0.5s;
+}
+main .cloud .wrap .btn_part button:hover{
+    background-color: #999;
+    color: #755562;
+}
+
+
+#section1{ 
+    width: 100%; height: 310px;
+}
+#section1 .wrap{ 
+    width: 1200px; height: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+#section1 .wrap .cont_box{ 
+    width: calc(100% / 3); height: 270px;
+    margin: 0 10px;
+    /* background-color: #ffa; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#section1 .wrap .cont_box .img_part{ }
+#section1 .wrap .cont_box .img_part img{ }
+
+#section1 .wrap .cont_box .txt_part{ text-align: center;}
+#section1 .wrap .cont_box .txt_part h4{ 
+    padding: 20px 0;
+    font-size: 18px; color: var(--main-color-gray)
+}
+#section1 .wrap .cont_box .txt_part p{
+    font-size: 14px; color: var(--main-color-gray)
+}
+
+
+#mid_banner{ 
+    width: 100%; height: 200px;
+    background-image: url(../img/Investment-Performance-Banner-650.jpg);
+    background-size: cover; background-position: 50% 50%;
+    background-attachment: fixed;
+}
+#mid_banner .dark{ 
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#mid_banner .dark .text{ 
+    width: 1200px; height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#mid_banner .dark .text h3{ 
+    padding-bottom: 10px;
+    color: #fff; font-size: 24px;
+    font-weight: normal;
+}
+#mid_banner .dark .text a{ 
+    display: block;
+    color: #5e889e; font-size: 14px;
+    transition: color 0.5s;
+}
+#mid_banner .dark .text a:hover{ 
+    color: var(--sub-color-purple);
+}
+
+
+#branches{ 
+    width: 100%; height: 800px;
+    background-image: url(../img/main2-bg.png);
+    background-size: cover; background-position: 50% 0;
+    background-repeat: no-repeat;
+}
+#branches .wrap{ 
+    width: 1200px; height: 100%;
+    padding: 80px 0;
+    margin: 0 auto;    
+}
+#branches .wrap h2{ 
+    padding-bottom: 40px;
+    color: var(--main-color-blue); font-size: 36px;
+    text-align: center; 
+}
+#branches .wrap .cont{
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+}
+#branches .wrap .cont .box{
+    width: calc(25% - 20px); height: 420px;
+    margin: 0 10px; padding: 20px;
+    background-color: #fff;
+    position: relative;
+    transition: box-shadow 0.3s;  
+}
+#branches .wrap .cont .box:hover{
+    border-radius: 4px;
+    box-shadow: 0 0 6px #000;
+}
+
+#branches .wrap .cont .box:first-child{ margin-left: 0;}
+#branches .wrap .cont .box:last-child{ margin-right: 0;}
+#branches .wrap .cont .box .img_part{ 
+    width: 100%; height: 160px;
+    padding: 20px;
+    background-size: cover; background-position: 50% 50%;
+}
+
+#branches .wrap .cont .box .txt_part{ 
+    padding-top: 40px;
+    color: var(--main-color-gray);
+}
+#branches .wrap .cont .box .txt_part h4{ 
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+#branches .wrap .cont .box .txt_part p{ font-size: 14px;}
+
+#branches .wrap .cont .box .btn_part{ 
+    width: 100%; height: 40px;
+}
+#branches .wrap .cont .box .btn_part img{ 
+    position: absolute; bottom: 20px; right: 20px;
+    cursor: pointer;
+    transition: box-shadow 0.3s; 
+}
+#branches .wrap .cont .box .btn_part img:hover{
+    box-shadow: 0 0 2px #000;
+}
+
+#branches .wrap .paysystem{ 
+    width: 100%; height: 150px;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+#branches .wrap .paysystem img{ 
+    display: block;
+    height: 50px;
+}
+
+
+#managers{ 
+    width: 100%; height: 430px;
+    background-image: url(../img/quick-enquiry.jpg);
+    background-size: cover; background-position: 50% 65%;
+    background-repeat: no-repeat;
+}
+#managers .bg{
+    width: 100%; height: 100%;
+    background-color: rgba(94, 136, 154, 0.5);
+}
+#managers .bg .wrap{ 
+    width: 1200px; height: 100%;
+    margin: 0 auto; padding: 60px 0 80px;
+}
+#managers .bg .wrap h2{ 
+    padding-bottom: 40px;
+    font-size: 36px; color: #fff;
+    text-align: center;
+}
+#managers .bg .wrap .cont{ 
+    width: 100%;
+    display: flex; flex-wrap: wrap;
+    justify-content: space-between;
+}
+#managers .bg .wrap .cont .img{ 
+    width: calc(100% / 6 - 20px); height: 100px;
+    margin: 0 10px 20px;   
+    background-size: cover; background-position: 50% 50%;
+    cursor: pointer;
+    /* background-color: #ffa; */
+}
+/* #managers .wrap .cont .img:first-child{ margin-left: 0;} */
+/* #managers .wrap .cont .img:last-child{ margin-right: 0;} */
+
+
